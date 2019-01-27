@@ -1,0 +1,43 @@
+.Home {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin-bottom: 2rem;
+    height: 20rem;
+    width: auto;
+    animation: rotate 40s infinite linear;
+  }
+
+  h1 {
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid aliceblue;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  ul {
+    margin-top: 5rem;
+
+    li {
+      letter-spacing: 1px;
+      text-align: center;
+      color: darken(aliceblue, 10%);
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

@@ -1,12 +1,18 @@
 {
   "root": true,
-  "plugins": ["react", "jest"],
   "extends": [
-    "eslint:recommended",
+    "standard",
+    "plugin:css-modules/recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:jest/recommended"
+    "eslint:recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/standard"
   ],
+  "plugins": ["react", "jest", "css-modules", "standard", "prettier"],
   "globals": {
     "DEVELOPMENT": true,
     "PRODUCTION": true
@@ -23,7 +29,7 @@
     "es6": true,
     "browser": true,
     "node": true,
-    "mocha": true
+    "jest": true
   },
   "rules": {
     "no-class-assign": 0,

@@ -1,26 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
+import Home from "./components/home/Home";
 
-const App = ({ message }) => {
-  return (
-    <div className="app">
-      <h1>{message}</h1>
-      <ul>
-        <li>Express</li>
-        <li>React</li>
-        <li>Webpack</li>
-        <li>HMR</li>
-        <li>SCSS</li>
-        <li>Jest</li>
-        <li>Enzyme</li>
-        <li>ESLint</li>
-      </ul>
-    </div>
-  );
-};
-
-App.propTypes = {
-  message: PropTypes.string.isRequired
+const App = () => {
+  return <Home message="React boilerplate" />;
 };
 
 export default App;

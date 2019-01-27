@@ -1,7 +1,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>React-Express-Webpack-Boilerplate</title>
 </head>
@@ -9,7 +10,11 @@
 <body>
   <!-- the application will be rendered into this div from index.js -->
   <div id="root"></div>
-  <script src="/scripts.js"></script>
+  <script>
+    if (!window.Promise) {
+      document.write('<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch,Array.prototype.includes"><\/script>')
+    }
+  </script>
 </body>
 
 </html>
